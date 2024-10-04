@@ -15,7 +15,7 @@ export class Tab5Page implements OnInit {
   }
 
   loadEvents() {
-
+    console.log("Loading events");
     
   }
 
