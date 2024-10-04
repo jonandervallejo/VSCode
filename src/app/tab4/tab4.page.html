@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Editar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Seleccione el elemento a editar</ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of eventos; let i = index">
+      <ion-label>{{item.speaker}}</ion-label>
+      <ion-label>{{item.title}}</ion-label>
+      
+      <ion-button color="warning" (click)="update(i)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+
